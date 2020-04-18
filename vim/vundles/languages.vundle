@@ -1,4 +1,4 @@
-Bundle 'sheerun/vim-polyglot'
+Bundle 'pangloss/vim-javascript.git'
 Bundle 'garbas/vim-snipmate.git'
 Bundle 'honza/vim-snippets'
 Bundle 'jtratner/vim-flavored-markdown.git'
