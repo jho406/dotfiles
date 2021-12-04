@@ -119,3 +119,40 @@ set nomodeline
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+
+
+
+" ==== ALE CONFIG ====
+
+let g:ale_fixers = {
+\ 'ruby': ['standardrb'],
+\ 'rspec.ruby': ['standardrb'],
+\ 'scss': ['prettier'],
+\ 'python': ['autopep8'],
+\ 'javascript': ['prettier', 'eslint'],
+\ 'typescript': ['prettier', 'eslint'],
+\ 'typescriptreact': ['prettier', 'eslint'],
+\ 'javascriptreact': ['prettier', 'eslint'],
+\ 'html': ['prettier'],
+\ 'eruby': ['standardrb'],
+\ 'yaml': ['prettier'],
+\ '*': ['remove_trailing_lines', 'trim_whitespace']
+\}
+
+let g:ale_linters = {
+\ 'ruby': ['standardrb'],
+\ 'rspec.ruby': ['standardrb'],
+\ 'scss': ['prettier'],
+\ 'python': ['flake8'],
+\ 'typescript': ['prettier', 'eslint'],
+\ 'typescriptreact': ['prettier', 'eslint'],
+\ 'javascript': ['eslint'],
+\ 'javascriptreact': ['eslint'],
+\ 'eruby': ['standardrb'],
+\ 'yaml': ['prettier'],
+\ 'html': ['prettier']
+\}
+
+nmap <silent> <leader>d <Plug>(ale_fix)
+
+let g:rspec_command = "!bundle exec rspec {spec} "
