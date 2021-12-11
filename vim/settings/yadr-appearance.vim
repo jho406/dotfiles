@@ -20,12 +20,14 @@ if has("gui_running")
 else
   set t_Co=256
 
-  " For people using a terminal that is not Solarized
-  if exists("g:yadr_using_unsolarized_terminal")
-    let g:solarized_termcolors=256
-    let g:solarized_termtrans=1
-  end
+  " " For people using a terminal that is not Solarized
+  " if exists("g:yadr_using_unsolarized_terminal")
+  "   let g:solarized_termcolors=256
+  "   let g:solarized_termtrans=1
+  " end
 endif
+
+set guifont=Monaco:h17
 
 colorscheme dracula
 set background=dark
