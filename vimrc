@@ -1,6 +1,8 @@
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+let g:yadr_using_unsolarized_terminal = 1
+let g:yadr_disable_solarized_enhancements = 1
 
 " TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
 " source ~/.vimrc.before if it exists.

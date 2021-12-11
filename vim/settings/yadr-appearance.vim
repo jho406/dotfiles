@@ -12,13 +12,13 @@ if has("gui_running")
   set lines=60
   set columns=190
 
-  if has("gui_gtk2")
-    set guifont=Inconsolata\ XL\ 12,Inconsolata\ 15,Monaco\ 12
-  else
-    set guifont=Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
-  end
+  " if has("gui_gtk2")
+  "   set guifont=Inconsolata\ XL\ 12,Inconsolata\ 15,Monaco\ 12
+  " else
+  "   set guifont=Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
+  " end
 else
-  let g:CSApprox_loaded = 1
+  set t_Co=256
 
   " For people using a terminal that is not Solarized
   if exists("g:yadr_using_unsolarized_terminal")
@@ -27,5 +27,5 @@ else
   end
 endif
 
-colorscheme solarized
+colorscheme dracula
 set background=dark
