@@ -1,4 +1,4 @@
-nnoremap <silent> ,t :FZF<CR>
+nnoremap <silent> ,t :GFiles<CR>
 
 " Additional mapping for buffer search
 nnoremap <silent> ,b :Buffers<cr>
