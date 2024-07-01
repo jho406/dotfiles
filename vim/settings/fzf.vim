@@ -1,4 +1,4 @@
-nnoremap <silent> ,t :GFiles<CR>
+nnoremap <silent> ,t :Files<CR>
 
 " Additional mapping for buffer search
 nnoremap <silent> ,b :Buffers<cr>
